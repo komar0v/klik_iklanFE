@@ -1,0 +1,237 @@
+.brand-wrapper {
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+
+.login-section-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 68px 100px;
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  .login-section-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .login-section-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .login-wrapper {
+    width: 100%;
+  }
+}
+
+.login-wrapper label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b0adad;
+}
+
+.login-wrapper .form-control {
+  padding: 10px 12px 10px 12px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+  width: 100%;
+  background-color: #F2F1F1;
+  box-sizing: border-box;
+  color: #2C3E50;
+  font-size: 14px;
+  letter-spacing: 1px
+}
+
+.login-wrapper .form-control::-webkit-input-placeholder {
+  color: #b0adad;
+}
+
+.login-wrapper .form-control::-moz-placeholder {
+  color: #b0adad;
+}
+
+.login-wrapper .form-control:-ms-input-placeholder {
+  color: #b0adad;
+}
+
+.login-wrapper .form-control::-ms-input-placeholder {
+  color: #b0adad;
+}
+
+.login-wrapper .form-control::placeholder {
+  color: #b0adad;
+}
+
+.login-wrapper .login-btn {
+  padding: 13px 20px;
+  background-color: #76CC12;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.login-wrapper .login-btn:hover {
+  border: 1px solid #fdbb28;
+  background-color: #fff;
+  color: #fdbb28;
+}
+
+.login-wrapper a.forgot-password-link {
+  color: #080808;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 54px;
+}
+
+@media (max-width: 575px) {
+  .login-wrapper a.forgot-password-link {
+    margin-bottom: 16px;
+  }
+}
+
+.login-wrapper-footer-text {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.login-title {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.login-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  height: 55%;
+}
+
+.img-waves {
+  z-index: 1;
+  position: relative;
+}
+
+.footer-link {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.bg-login {
+  background: linear-gradient(29.06deg, rgba(75, 158, 194, 0.95) 1.94%, rgba(11, 163, 221, 0.95) 29.75%);
+}
+
+.btn-google {
+  border-radius: 5rem;
+}
+
+.login-main-text {
+  color: #fff;
+}
+
+.line {
+  height: 1px;
+  width: 45%;
+  background-color: #E0E0E0;
+  margin-top: 10px
+}
+
+.or {
+  width: 10%;
+  font-weight: bold
+}
+
+.radio-label {
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.radio-pillbox {
+  height: 3rem;
+  width: 100%;
+  font-size: 1em;
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.radio-pillbox :checked {
+  background: #0BA3DD;
+  color: white;
+}
+
+.radio-pillbox radiogroup {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.radio-pillbox radiogroup div {
+  width: 100%;
+  position: relative;
+}
+
+.radio-pillbox radiogroup div input {
+  -webkit-appearance: inherit;
+  width: 100%;
+  height: 100%;
+  transition: background 300ms ease-out;
+  margin: 0;
+  outline: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.radio-pillbox radiogroup div input:checked {
+  color: #5f6982;
+  border: none;
+  box-shadow: inset 0 10px 50px rgba(25, 25, 25, 0.1);
+}
+
+.radio-pillbox radiogroup .first {
+  border-radius: 20px 0 0 20px;
+  border-left: none;
+}
+
+.radio-pillbox radiogroup .last {
+  border-radius: 0 20px 20px 0;
+}
+
+.radio-pillbox radiogroup div label {
+  position: absolute;
+  top: 50%;
+  /* top plus line-height centers text */
+  line-height: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.radio-pillbox input:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=login.css.map */

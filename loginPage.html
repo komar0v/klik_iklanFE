@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="assets/css/auth_page.css" />
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="bg-login col">
+        <div class="login-main-text text-center">
+          <h1 style="font-size: 80px">kliklan</h1>
+          <p>klik untuk beriklan</p>
+        </div>
+        <div>
+          <img src="assets/images/orang_loginpage.svg" alt="login image" class="login-img" />
+        </div>
+        <div class="text-center">
+          <p class="login-main-text">© 2020/2021 - Kelompok 3 IF 08</p>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <img class="img-waves" src="assets/images/alt-waves_login.svg" />
+        </div>
+      </div>
+
+      <div class="col login-section-wrapper">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <div class="radio-pillbox">
+              <radiogroup>
+                <div>
+                  <input checked type="radio" name="radio-group" id="login_page" value="login_page" class="first">
+                  <label for="login_page" class="radio-label">Login</label>
+                  </input>
+                </div>
+                <div>
+                  <input type="radio" name="radio-group" id="register_page" value="register_page">
+                  <label for="register_page">Register</label>
+                  </input>
+                </div>
+
+              </radiogroup>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="brand-wrapper">
+          <button class="
+                btn btn-lg btn-google btn-block
+                text-uppercase
+                btn-outline-dark
+              " type="submit">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
+              width="20" height="20" />
+            Login with Google
+          </button>
+        </div>
+        <div class="row px-3 mb-4">
+          <div class="line"></div>
+          <p class="or text-center">atau</p>
+          <div class="line"></div>
+        </div>
+        <div class="login-wrapper">
+          <form action="#!">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" />
+            </div>
+            <div class="form-group mb-4">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" class="form-control" />
+            </div>
+            <input name="login" id="login" class="btn btn-block login-btn" type="button" value="LOGIN" />
+          </form>
+          <div class="row px-3 mb-4">
+            <div class="custom-control-inline">
+              <a href="#" class="forgot-password-link">Forgot password?</a>
+            </div>
+            <a href="#" class="forgot-password-link ml-auto mb-0">Reset</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+  <script>
+    document.getElementById("register_page").onclick = function () {
+      location.href = "./registerPage.html";
+    };
+  </script>
+</body>
+
+</html>
