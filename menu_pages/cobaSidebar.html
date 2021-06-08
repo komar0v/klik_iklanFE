@@ -16,26 +16,25 @@
 <body>
 
     <div class="wrapper d-flex align-items-stretch">
-        <nav id="sidebar" class="active">
+        
+        <nav id="sidebar_min" class="active">
             <ul class="list-unstyled components mb-5 position-fixed">
                 <li>
-                    <a onclick="minimize_sidebar()" href="#"><span><img width="25" height="25" src="../assets/images/icons/bars_icon.svg"></span></a>
+                    <a href="#"><span><img width="25" height="25" src="../assets/images/icons/bars_icon.svg"></span></a>
                 </li>
                 <li>
-                    <a id="icn_text_home" href="#"><span><img width="25" height="25" src="../assets/images/icons/home_icon.svg"></span>Home</a>
+                    <a href="#"><span><img width="25" height="25" src="../assets/images/icons/home_icon.svg"></span></a>
                 </li>
                 <li>
-                    <a id="icn_text_message" href="#"><span><img width="25" height="25" src="../assets/images/icons/message_icon.svg"></span>Message</a>
+                    <a href="#"><span><img width="25" height="25" src="../assets/images/icons/message_icon.svg"></span></a>
                 </li>
                 <li>
-                    <a id="icn_text_trx" href="#"><span><img width="25" height="25" src="../assets/images/icons/transaction_icon.svg"></span>Transaction</a>
+                    <a href="#"><span><img width="25" height="25" src="../assets/images/icons/transaction_icon.svg"></span></a>
                 </li>
                 <li class="halaman-aktif">
-                    <a id="icn_text_support" href="#"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span>Support</a>
+                    <a href="#"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span></a>
                 </li>
             </ul>
-
-
         </nav>
 
         <!-- Page Content  -->
@@ -102,12 +101,13 @@
             </div>
 
             <div class="row text-center">
-                
                 <div class="mr-3 ml-3 mt-3 mb-3 col-lg-3 mx-auto menu-box">
                     <a href="#">
                         <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_faq.svg">
                     </a>
                     <h3 class="name">FAQ</h3>
+
+
                 </div>
 
                 <div class="mr-3 ml-3 mt-3 mb-3 col-lg-3 mx-auto menu-box">
@@ -115,6 +115,14 @@
                         <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_guide.svg">
                     </a>
                     <h3 class="name">GUIDE</h3>
+
+                </div>
+
+                <div class="mr-3 ml-3 mt-3 mb-3 col-lg-3 mx-auto menu-box">
+                    <a href="#">
+                        <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_forum.svg">
+                    </a>
+                    <h3 class="name">FORUM</h3>
 
                 </div>
 
@@ -126,7 +134,36 @@
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script>
+        // Hide submenus
+        $('#body-row .collapse').collapse('hide');
+
+        // Collapse/Expand icon
+        $('#collapse-icon').addClass('fa-angle-double-left');
+
+        // Collapse click
+        $('[data-toggle=sidebar-colapse]').click(function () {
+            SidebarCollapse();
+        });
+
+        function SidebarCollapse() {
+            $('.menu-collapsed').toggleClass('d-none');
+            $('.sidebar-submenu').toggleClass('d-none');
+            $('.submenu-icon').toggleClass('d-none');
+            $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+
+            // Treating d-flex/d-none on separators with title
+            var SeparatorTitle = $('.sidebar-separator-title');
+            if (SeparatorTitle.hasClass('d-flex')) {
+                SeparatorTitle.removeClass('d-flex');
+            } else {
+                SeparatorTitle.addClass('d-flex');
+            }
+
+            // Collapse/Expand icon
+            $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+        }
+    </script>
 </body>
 
 </html>

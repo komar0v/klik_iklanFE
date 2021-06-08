@@ -8221,13 +8221,13 @@ h1, h2, h3, h4, h5,
   -o-transition: all 0.3s;
   transition: all 0.3s; }
   #sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
+    min-width: 95px;
+    max-width: 95px;
     text-align: center; }
     #sidebar.active ul.components li {
       font-size: 14px; }
       #sidebar.active ul.components li a {
-        padding: 10px 0; }
+        padding: 10px 5px; }
         #sidebar.active ul.components li a span {
           margin-right: 0;
           display: block;
@@ -8268,8 +8268,7 @@ h1, h2, h3, h4, h5,
     #sidebar ul li a {
       padding: 10px 30px;
       display: block;
-      color: white;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      color: white; }
       #sidebar ul li a span {
         margin-right: 15px; }
         @media (max-width: 991.98px) {

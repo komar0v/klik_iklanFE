@@ -53,6 +53,87 @@
 
 }
 
-.border-bawah {
-    border-width: 5px !important;
+.halaman-aktif {
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 0px 4px;
 }
+
+#sidebar_min {
+    min-width: 100px;
+    max-width: 100px;
+    background: #0BA3DD;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    #sidebar_min.active {
+      min-width: 50px;
+      max-width: 50px;
+      text-align: center;}
+      #sidebar_min.active ul.components li {
+        font-size: 14px; }
+        #sidebar_min.active ul.components li a {
+          padding: 15px 10px; }
+          #sidebar_min.active ul.components li a span {
+            margin-right: 0;
+            display: block;
+            font-size: 24px; }
+      #sidebar_min.active .logo {
+        padding: 10px 0; }
+      #sidebar_min.active .footer {
+        display: none; }
+    #sidebar_min .logo {
+      display: block;
+      color: #fff;
+      font-weight: 900;
+      padding: 30px 30px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      @media (prefers-reduced-motion: reduce) {
+        #sidebar_min .logo {
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none; } }
+    #sidebar_min ul.components {
+      padding: 0;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      @media (prefers-reduced-motion: reduce) {
+        #sidebar_min ul.components {
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none; } }
+    #sidebar_min ul li {
+      font-size: 16px; }
+      #sidebar_min ul li > ul {
+        margin-left: 10px; }
+        #sidebar_min ul li > ul li {
+          font-size: 14px; }
+      #sidebar_min ul li a {
+        padding: 30px 30px;
+        display: block;
+        color: white;}
+        #sidebar_min ul li a span {
+          margin-right: 15px; }
+          @media (max-width: 991.98px) {
+            #sidebar_min ul li a span {
+              display: block; } }
+        #sidebar_minul li a:hover {
+          color: #fff; }
+      #sidebar_min ul li.active > a {
+        background: transparent;
+        color: #fff; }
+    @media (max-width: 991.98px) {
+      #sidebar_min {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important; }
+        #sidebar_min.active {
+          margin-left: 0 !important; } }

@@ -8,9 +8,8 @@
   <title>Login</title>
   <!-- Bootstrap CSS -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
   <link rel="stylesheet" href="assets/css/auth_page.css" />
 
 </head>
@@ -27,7 +26,7 @@
           <img src="assets/images/orang_loginpage.svg" alt="login image" class="login-img" />
         </div>
         <div class="text-center">
-          <p class="login-main-text">© 2020/2021 - Kelompok 3 IF 08</p>
+          <p class="login-main-text">© 2020/2021 - Kelompok 8 IF 08</p>
         </div>
         <br>
         <br>
@@ -44,7 +43,7 @@
               <radiogroup>
                 <div>
                   <input checked type="radio" name="radio-group" id="login_page" value="login_page" class="first">
-                  <label for="login_page" class="radio-label">Login</label>
+                  <label style="color: white;" for="login_page" class="radio-label">Login</label>
                   </input>
                 </div>
                 <div>
@@ -61,11 +60,7 @@
         </div>
 
         <div class="brand-wrapper">
-          <button class="
-                btn btn-lg btn-google btn-block
-                text-uppercase
-                btn-outline-dark
-              " type="submit">
+          <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline-dark" type="submit">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
               width="20" height="20" />
@@ -81,28 +76,54 @@
           <form action="#!">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" class="form-control" />
+              <input onkeyup="validasi_email()" autocomplete="off" type="email" name="email" id="email_input"
+                class="form-control" />
+              <small id="error_label" style="color: #dc3545;"></small>
+
             </div>
             <div class="form-group mb-4">
               <label for="password">Password</label>
               <input type="password" name="password" id="password" class="form-control" />
             </div>
-            <input name="login" id="login" class="btn btn-block login-btn" type="button" value="LOGIN" />
+            <button name="login" id="login_btn" class="btn btn-block login-btn" type="submit">
+              <div id="text_login">LOGIN</div>
+            </button>
           </form>
           <div class="row px-3 mb-4">
             <div class="custom-control-inline">
               <a href="#" class="forgot-password-link">Forgot password?</a>
             </div>
-            <a href="#" class="forgot-password-link ml-auto mb-0">Reset</a>
+            <a href="#" data-toggle="modal" data-target="#exampleModal"
+              class="forgot-password-link ml-auto mb-0">Reset</a>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
@@ -114,6 +135,52 @@
     document.getElementById("register_page").onclick = function () {
       location.href = "./registerPage.html";
     };
+  </script>
+
+  <script>
+    function validasi_email() {
+      var email = document.getElementById("email_input").value;
+      var lblError = document.getElementById("error_label");
+      lblError.innerHTML = "";
+      document.getElementById("email_input").style.border = "";
+      var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+      if (!expr.test(email)) {
+        lblError.innerHTML = "Invalid email address.";
+        document.getElementById("email_input").style.border = "2px solid red";
+      }
+    }
+
+    //CONFIG TOASTR
+    toastr.options = {
+      "closeButton": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-top-center",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+
+    function notif_login() {
+      toastr.success("Berhasil login");
+    }
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      document.getElementById("login_btn").onclick = function () {
+        document.getElementById("text_login").innerHTML =
+          '<img src="./assets/images/loading_spin.gif" width="30" height="30" />';
+        setTimeout(notif_login, 3000);
+      }
+    });
   </script>
 </body>
 
