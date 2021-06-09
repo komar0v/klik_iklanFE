@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <title>Support</title>
+    <title>Find Talent</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -29,8 +29,8 @@
                 <li>
                     <a onclick="minimize_sidebar()" href="#"><span><img width="25" height="25" src="../assets/images/icons/bars_icon.svg"></span></a>
                 </li>
-                <li>
-                    <a id="icn_text_home" href="./home_FindTalent.html"><span><img width="25" height="25" src="../assets/images/icons/home_icon.svg"></span>Home</a>
+                <li class="halaman-aktif">
+                    <a id="icn_text_home" href="#"><span><img width="25" height="25" src="../assets/images/icons/home_icon.svg"></span>Home</a>
                 </li>
                 <li>
                     <a id="icn_text_message" href="#"><span><img width="25" height="25" src="../assets/images/icons/message_icon.svg"></span>Message</a>
@@ -38,8 +38,8 @@
                 <li>
                     <a id="icn_text_trx" href="#"><span><img width="25" height="25" src="../assets/images/icons/transaction_icon.svg"></span>Transaction</a>
                 </li>
-                <li class="halaman-aktif">
-                    <a id="icn_text_support" href="#"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span>Support</a>
+                <li>
+                    <a id="icn_text_support" href="./supportPage.html"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span>Support</a>
                 </li>
             </ul>
 
@@ -55,9 +55,13 @@
                     <div class="row">
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item active-page-tittle">
-                                <a href=""><h3 class="nav-link">Support</h3></a>
+                                <a href=""><h3 class="nav-link">Find Talent</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href=""><h3 class="nav-link">Popular Talent</h3></a>
                             </li>
                         </ul>
+                        
                         
                     </div>
                     
@@ -93,43 +97,21 @@
             </nav>
 
             <div class="row">
-                <div class="col-12">
-
-                    <div style="background-color: #B3D3F2;" class="jumbotron bg-support-page">
-
-                        <h1 class="display-5 text-center">Hello, what can we do for you?</h1>
-                        <p class="lead text-center">Search our help center quick answers</p>
-
-                        <div class="input-group w-50 mx-auto">
-                            <input type="text" class="form-control search-box" name="search_box" id="search_box"
-                                placeholder="start typing your search">
-                            <div class="input-group-append">
-                                <button class="btn btn-light search-box" type="button">
-                                    <img width="25" height="25" src="../assets/images/icons/kaca_pembesar.svg">
-                                </button>
-                            </div>
-
-                        </div>
-
-                    </div>
+                <div class="col-12 text-center">
+                    <img class="img-fluid" src="../assets/images/banner_homeFindTalent.svg">
                 </div>
 
             </div>
 
-            <div class="row text-center">
-                
-                <div class="mr-3 ml-3 mt-3 mb-3 col-lg-3 mx-auto menu-box">
-                    <a href="#">
-                        <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_faq.svg">
-                    </a>
-                    <h3 class="name">FAQ</h3>
-                </div>
-
-                <div class="mr-3 ml-3 mt-3 mb-3 col-lg-3 mx-auto menu-box">
-                    <a href="#">
-                        <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_guide.svg">
-                    </a>
-                    <h3 class="name">GUIDE</h3>
+            <div style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px;" class="row text-center">
+                <div class="input-group w-50 mx-auto">
+                    <input type="text" class="form-control search-box2" name="search_box" id="search_box"
+                        placeholder="start typing your search">
+                    <div class="input-group-append">
+                        <button class="btn btn-light search-box2" type="button">
+                            <img width="25" height="25" src="../assets/images/icons/kaca_pembesar.svg">
+                        </button>
+                    </div>
 
                 </div>
 

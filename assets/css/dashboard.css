@@ -1,11 +1,16 @@
 .active-page-tittle {
-    text-decoration: underline;
-    text-decoration-thickness: 15%;
-    text-decoration-color: #0BA3DD;
+    border-style: solid;
+    border-color: #0BA3DD;
+    border-width: 0px 0px 4px 0px;
 }
 
 .search-box {
     border-radius: 5rem;
+}
+
+.search-box2 {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .bg-support-page {

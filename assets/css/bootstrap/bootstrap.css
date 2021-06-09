@@ -8221,13 +8221,13 @@ h1, h2, h3, h4, h5,
   -o-transition: all 0.3s;
   transition: all 0.3s; }
   #sidebar.active {
-    min-width: 95px;
-    max-width: 95px;
+    min-width: 75px;
+    max-width: 75px;
     text-align: center; }
     #sidebar.active ul.components li {
       font-size: 14px; }
       #sidebar.active ul.components li a {
-        padding: 10px 5px; }
+        padding: 10px 6px; }
         #sidebar.active ul.components li a span {
           margin-right: 0;
           display: block;
