@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
     <style>
@@ -24,9 +24,10 @@
 <body>
 
     <div class="wrapper d-flex align-items-stretch">
+
         <nav id="sidebar" class="active">
             <ul class="list-unstyled components mb-5 position-fixed">
-                <li>
+                <li class="hide_on_mobile">
                     <a onclick="minimize_sidebar()" href="#"><span><img width="25" height="25" src="../assets/images/icons/bars_icon.svg"></span></a>
                 </li>
                 <li>
@@ -42,17 +43,20 @@
                     <a id="icn_text_support" href="#"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span>Support</a>
                 </li>
             </ul>
-
-
         </nav>
 
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
 
-            <nav style="padding-top: 0px; margin-top: -30px;" class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav style="padding-top: 0px; margin-top: -25px;" class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <div class="row">
+                    <button type="button" id="sidebar_mobile" class="btn show_on_mobile_only">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+
+                    <div class="row hide_on_mobile">
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item active-page-tittle">
                                 <a href=""><h3 class="nav-link">Support</h3></a>
@@ -61,14 +65,18 @@
                         
                     </div>
                     
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-user-alt"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item active show_on_mobile_only">
+                                <a class="nav-link h4 active-page-mobile" href="#">Support</a>
+                            </li>
 
                             <li class="nav-item">
                                 <h4 class="nav-link">Hi, coeg</h4>
@@ -84,8 +92,6 @@
                                     <a class="dropdown-item" href="#">Log Out</a>
                                 </div>
                             </li>
-
-
                         </ul>
                     </div>
 
@@ -93,11 +99,10 @@
             </nav>
 
             <div class="row">
+                
                 <div class="col-12">
-
                     <div style="background-color: #B3D3F2;" class="jumbotron bg-support-page">
-
-                        <h1 class="display-5 text-center">Hello, what can we do for you?</h1>
+                        <p style="color: black;" class="display-4 lead text-center">Hello, what can we do for you?</p>
                         <p class="lead text-center">Search our help center quick answers</p>
 
                         <div class="input-group w-50 mx-auto">

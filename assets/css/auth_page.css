@@ -121,8 +121,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 55%;
-  height: 55%;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  width: 75%;
+  height: 75%;
 }
 
 .img-waves {

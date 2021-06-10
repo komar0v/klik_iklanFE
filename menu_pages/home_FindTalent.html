@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"  />
     <style>
         @font-face{
             font-family: TerminalDosis; src: url(../assets/fonts/terminal-dosis/TerminalDosis-Regular.ttf)
@@ -26,7 +27,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar" class="active">
             <ul class="list-unstyled components mb-5 position-fixed">
-                <li>
+                <li class="hide_on_mobile">
                     <a onclick="minimize_sidebar()" href="#"><span><img width="25" height="25" src="../assets/images/icons/bars_icon.svg"></span></a>
                 </li>
                 <li class="halaman-aktif">
@@ -42,17 +43,20 @@
                     <a id="icn_text_support" href="./supportPage.html"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span>Support</a>
                 </li>
             </ul>
-
-
         </nav>
 
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
 
-            <nav style="padding-top: 0px; margin-top: -30px;" class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav style="padding-top: 0px; margin-top: -25px;" class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <div class="row">
+                    <button type="button" id="sidebar_mobile" class="btn show_on_mobile_only">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+
+                    <div class="row hide_on_mobile">
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item active-page-tittle">
                                 <a href=""><h3 class="nav-link">Find Talent</h3></a>
@@ -62,17 +66,24 @@
                             </li>
                         </ul>
                         
-                        
                     </div>
                     
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-user-alt"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item active show_on_mobile_only">
+                                <a class="nav-link h4 active-page-mobile" href="#">Find Talent</a>
+                            </li>
+
+                            <li class="nav-item active show_on_mobile_only">
+                                <a class="nav-link h4" href="#">Popular Talent</a>
+                            </li>
 
                             <li class="nav-item">
                                 <h4 class="nav-link">Hi, coeg</h4>
@@ -88,8 +99,6 @@
                                     <a class="dropdown-item" href="#">Log Out</a>
                                 </div>
                             </li>
-
-
                         </ul>
                     </div>
 
@@ -103,27 +112,88 @@
 
             </div>
 
-            <div style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px;" class="row text-center">
-                <div class="input-group w-50 mx-auto">
-                    <input type="text" class="form-control search-box2" name="search_box" id="search_box"
-                        placeholder="start typing your search">
+            <div style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; padding-bottom: 5px;" class="row text-center">
+                <div class="input-group">
+                    <select multiple="multiple" class="form-control multi-search-box search-box2" placeholder="Search">
+                        <option value="music">music</option>
+                        <option value="youtuber">youtuber</option>
+                    </select>
                     <div class="input-group-append">
                         <button class="btn btn-light search-box2" type="button">
                             <img width="25" height="25" src="../assets/images/icons/kaca_pembesar.svg">
                         </button>
                     </div>
+                    <div class="input-group-append">
+                        <span class="filter-icn-box " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
+                            <img width="25" height="25" src="../assets/images/icons/fiter_icon.svg"> <span class="align-middle">Filter</span> 
+                        </span>
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Follower tinggi - rendah</a>
+                            <a class="dropdown-item" href="#">Follower rendah - tinggi</a>
+                            <a class="dropdown-item" href="#">Goodlooking - Badlooking</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
 
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card user-card">
+                        <div class="card-header">
+                            <img src="../assets/images/talents/rich+brian_talents.png" class="img-radius img-fluid" alt="User-Profile-Image">
+                        </div>
+                        <div class="card-block">
+                            
+                            
+                            <h6 class="f-w-600 m-t-25 m-b-10"><img src="../assets/images/icons/instagram_icon.svg"></h6>
+                            <p class="text-muted">Active | Male | Born 23.05.1992</p>
+                            <hr style="border: 1px solid black;" class="w-25">
+                            <p class="text-muted m-t-15">Activity Level: 87%</p>
+                            
+                            <div style="color: black;" class="counter-block mt-10 p-20">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <h4>400</h4>
+                                        <p>post</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4>4.5M</h4>
+                                        <p>followers</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4>776</h4>
+                                        <p>following</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="m-t-15 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <hr>
+                            <div class="row justify-content-center user-social-link">
+                                <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+                                <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+                                <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                
             </div>
 
         </div>
-    </div>
 
-    <script src="../assets/js/jquery.min.js"></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js"></script>
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        $(".multi-search-box").select2({
+            placeholder: "start typing your search",
+        });
+    </script>
 </body>
 
 </html>
