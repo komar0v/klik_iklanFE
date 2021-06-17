@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <title>Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <style>
+        @font-face {
+            font-family: TerminalDosis;
+            src: url(../assets/fonts/terminal-dosis/TerminalDosis-Regular.ttf)
+        }
+
+        body {
+            font-family: TerminalDosis
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+
+        <nav id="sidebar" class="active">
+            <ul class="list-unstyled components mb-5 position-fixed">
+                <li class="hide_on_mobile">
+                    <a onclick="minimize_sidebar()" href="#"><span><img width="25" height="25" src="../assets/images/icons/bars_icon.svg"></span></a>
+                </li>
+                <li>
+                    <a id="icn_text_home" href="./home_FindTalent.html"><span><img width="25" height="25" src="../assets/images/icons/home_icon.svg"></span>Home</a>
+                </li>
+                <li class="halaman-aktif">
+                    <a id="icn_text_message" href="#"><span><img width="25" height="25" src="../assets/images/icons/message_icon.svg"></span>Message</a>
+                </li>
+                <li>
+                    <a id="icn_text_trx" href="./transactionPage.html"><span><img width="25" height="25" src="../assets/images/icons/transaction_icon.svg"></span>Transaction</a>
+                </li>
+                <li>
+                    <a id="icn_text_support" href="./supportPage.html"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span>Support</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav style="padding-top: 0px; margin-top: -25px;" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebar_mobile" class="btn show_on_mobile_only">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+
+                    <div class="row hide_on_mobile">
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item active-page-tittle">
+                                <a href="">
+                                    <h3 class="nav-link">Message</h3>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-user-alt"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item active show_on_mobile_only">
+                                <a class="nav-link h4 active-page-mobile" href="#">Message</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <h4 class="nav-link">Hi, coeg</h4>
+                            </li>
+                            <li class="nav-item dropleft dropdown-toggle">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg"
+                                        width="45" height="45" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Edit Profile</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+                <div class="container hide_on_mobile">
+                    <div class="content container-fluid">
+                        <div class="row row-broken">
+                            <div class="col-sm-3 col-xs-12">
+                                <div class="col-inside-lg decor-default chat" style="overflow: hidden; outline: none;"
+                                    tabindex="5000">
+                                    <div class="chat-users">
+                                        
+                                        <div class="user-message-card">
+                                            <a href="#" class="list-group-item list-group-item-action border-0">
+                                                
+                                                <div class="d-flex align-items-start">
+                                                    <img src="../assets/images/talents/yayuk_round.png" class="rounded-circle" alt="Vanessa Tucker" width="60" height="60">
+                                                    <div class="flex-grow-1 ml-3">
+                                                        <span>Yayuk Widiyanti</span>
+                                                        <div>
+                                                            <span>lorem</span>
+                                                            <span class="small float-right">2 min</span>
+                                                        </div>
+                                                        
+                                                        <div style="background-color: #D6795C; border-radius: 75px;" class="badge float-right"><span class="text-white">5</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="user-message-card"> 
+                                            <a href="#" class="list-group-item list-group-item-action border-0">
+                                                <div class="d-flex align-items-start">
+                                                    <img src="../assets/images/talents/isyana_round.png" class="rounded-circle" alt="Vanessa Tucker" width="60" height="60">
+                                                    <div class="flex-grow-1 ml-3">
+                                                        <span>Isyana Saraswati</span>
+                                                        <div>
+                                                            <span>lorem</span>
+                                                            <span class="small float-right">2 min</span>
+                                                        </div>
+                                                        
+                                                        <div style="background-color: #D6795C; border-radius: 75px;" class="badge float-right"><span class="text-white">5</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 col-xl-9">
+                                <div class="py-2 px-4 d-none d-lg-block">
+                                    <div class="d-flex align-items-center py-1">
+                                        <div class="position-relative">
+                                            <img src="../assets/images/talents/yayuk_round.png" class="rounded-circle mr-1" width="60" height="60">
+                                        </div>
+                                        <div class="flex-grow-1 pl-3">
+                                            <strong>Yayuk Widiyanti</strong>
+                                            <div class="text-muted">Online</div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="position-relative">
+                                    <div class="chat-messages p-4">
+            
+                                        <div class="chat-message-left pb-4">
+                                            
+                                            <div class="flex-shrink-1 bg-white rounded py-2 px-3 ml-3">
+                                                Cras pulvinar, sapien id vehicula aliquet, diam velit elementum orci.
+                                            </div>
+                                        </div>
+            
+                                        <div class="chat-message-right mb-4">
+                                            
+                                            <div style="background-color: #0BA3DD;" class="flex-shrink-1 text-white rounded py-2 px-3 mr-3">
+                                                
+                                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                            </div>
+                                        </div>
+            
+                                        <div class="chat-message-left pb-4">
+                                            
+                                            <div class="flex-shrink-1 bg-white rounded py-2 px-3 ml-3">
+                                                Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                                            </div>
+                                        </div>
+            
+                                        <div class="chat-message-right mb-4">
+                                            
+                                            <div style="background-color: #0BA3DD;"  class="flex-shrink-1 text-white rounded py-2 px-3 mr-3">
+                                                Cum ea graeci tractatos.
+                                            </div>
+                                        </div>
+
+                                        <div class="chat-message-right mb-4">
+                                            
+                                            <div class="flex-shrink-1 bg-white rounded py-2 px-3 mr-3">
+                                                <i class="fa fa-paperclip"></i> A_Project.PDF
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+            
+                                <div class="flex-grow-0 py-3 px-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-white border-0"><i class="fa fa-paperclip"></i></span>
+                                          </div>
+                                        <input type="text" class="form-control border-0" placeholder="Type your message">
+                                        <div class="input-group-append">
+                                            <button style="background-color: #E56137;" class="btn btn-outline-secondary rounded-circle" type="button">
+                                                <i class="fa fa-location-arrow text-white"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    
+</body>
+
+</html>
