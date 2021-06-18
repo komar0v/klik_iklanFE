@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <title>Support</title>
+    <title>Transaction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -216,7 +216,7 @@
                             </div>
                             <div class="modal-body">
                                 <div style="background-color: #EBF6F6; margin-top: -20px;" class="row text-center pt-4 pb-4">
-                                    <div class="col-sm">
+                                    <div id="head_payment" class="col-sm">
                                        <img src="../assets/images/icons/cc_icon.svg" width="40" height="40">
                                        <span class="h5">Transaksi aman dan bebas biaya layanan lho!</span>
                                     </div>
@@ -226,32 +226,50 @@
                                         <ul style="display: none;" class="steps">
                                           <li class="is-active">Step 1</li>
                                           <li>Step 2</li>
-                                          <li>Step 3</li>
                                         </ul>
                                         <form class="form-wrapper">
                                           <fieldset class="section is-active">
-                                            <h3>Your Details</h3>
+                                            <h3>Payment Method</h3>
                                             <div class="row_payment cf text-center pb-lg-4">
                                                 <div class="four col_payment">
                                                   <input type="radio" name="r1" id="r1">
                                                   <label for="r1">
-                                                    <h4>Designer</h4>
+                                                    <img class="img-fluid" src="../assets/images/icons/alfamart_icon.png" width="170" height="75">
                                                   </label>
                                                 </div>
                                                 <div class="four col_payment">
                                                   <input type="radio" name="r1" id="r2"><label for="r2">
-                                                    <h4>Developer</h4>
+                                                    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" width="170" height="75">
                                                   </label>
                                                 </div>
                                                 <div class="four col_payment">
                                                   <input type="radio" name="r1" id="r3"><label for="r3">
-                                                    <h4>Project Manager</h4>
+                                                    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/8/88/MasterCard_early_1990s_logo.svg" width="170" height="75">
                                                   </label>
                                                 </div>
+                                                <div class="four col_payment">
+                                                    <input type="radio" name="r1" id="r4"><label for="r4">
+                                                      <img class="img-fluid" src="https://1.bp.blogspot.com/-Le-OjhRx8lM/XmMnhn40y9I/AAAAAAAABr0/bOQ8PWjEjQ0QBuh3s4L_13jJHUj4O47qwCLcBGAsYHQ/s1600/Logo%2BIndomaret.png" width="170" height="75">
+                                                    </label>
+                                                </div>
+                                                <div class="four col_payment">
+                                                    <input type="radio" name="r1" id="r5"><label for="r5">
+                                                      <img class="img-fluid" src="https://seeklogo.com/images/Q/quick-response-code-indonesia-standard-qris-logo-F300D5EB32-seeklogo.com.png" width="170" height="75">
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <div class="align-content-center mx-auto text-center">
-                                                <div class="button">Next</div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="h5">Total Payment</p>
+                                                    <p style="margin-top: -10px;" class="lead">Rp 500.000</p>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="text-right">
+                                                        <div class="button">Next</div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            
                                           </fieldset>
                                           <fieldset class="section">
                                             <div class="row">
@@ -288,16 +306,12 @@
                                                 <div class="button">Next</div>
                                             </div>
                                           </fieldset>
-                                          <fieldset class="section">
-                                            <h3>Choose a Password</h3>
-                                            <input type="password" name="password" id="password" placeholder="Password">
-                                            <input type="password" name="password2" id="password2" placeholder="Re-enter Password">
-                                            <input class="submit button" type="submit" value="Sign Up">
-                                          </fieldset>
-                                          <fieldset class="section">
-                                            <h3>Account Created!</h3>
-                                            <p>Your account has now been created.</p>
-                                            <div class="button">Reset Form</div>
+                                          
+                                          <fieldset class="section text-center">
+                                            <img class="img-fluid" src="../assets/images/icons/checklist_icon.png" width="150" height="150">
+                                            <h3>Payment Completed!</h3>
+                                            <p>Pembayaran kamu sudah diterima.<br>Tunggu konfirmasi dari talent.</p>
+                                            <div class="button">Continue</div>
                                           </fieldset>
                                         </form>
                                     </div>
