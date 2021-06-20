@@ -7,9 +7,7 @@
     <title>Find Talent</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"  />
@@ -145,15 +143,18 @@
                         <div class="card-block">
                             <h4 class="mt-0 mb-auto text-center">Rich Brian</h4>
                             <div class="row">
-                                <div class="col-4">
-                                    <i style="color: #FF2176;" class="fa fa-heart-o fa-4x"></i>
+                                <div id="love_btn" class="col">
+                                    <a href="javascript:void"><i style="color: #FF2176;" class="fa fa-heart fa-4x"></i></a>
+                                </div>
+                                <div class="col text-center">
+                                    <h6 style="padding-top: 10px;"><img src="../assets/images/icons/instagram_icon.svg"></h6>
+                                    <i class="fas fa-map-marker-alt"></i> <span>Jakarta, ID</span>
+                                    <p>lorem lorem</p>
+                                </div>
+                                <div class="col">
+                                    
                                 </div>
                                 
-                            </div>
-                            <div style="margin-top: -60px;" class="col-auto text-center">
-                                <h6 style="padding-top: 10px;"><img src="../assets/images/icons/instagram_icon.svg"></h6>
-                                <i class="fas fa-map-marker-alt"></i> <span>Florida, US</span>
-                                <p>lorem lorem</p>
                             </div>
                             
                             
@@ -203,15 +204,18 @@
                         <div class="card-block">
                             <h4 class="mt-0 mb-auto text-center">Yayuk Widiyanti</h4>
                             <div class="row">
-                                <div class="col-4">
-                                    <i style="color: #FF2176;" class="fa fa-heart fa-4x"></i>
+                                <div id="love_btn" class="col">
+                                    <a href="javascript:void"><i style="color: #FF2176;" class="fa fa-heart-o fa-4x"></i></a>
+                                </div>
+                                <div class="col text-center">
+                                    <h6 style="padding-top: 10px;"><img src="../assets/images/icons/instagram_icon.svg"></h6>
+                                    <i class="fas fa-map-marker-alt"></i> <span>Jakarta, ID</span>
+                                    <p>lorem lorem</p>
+                                </div>
+                                <div class="col">
+                                    
                                 </div>
                                 
-                            </div>
-                            <div style="margin-top: -60px;" class="col-auto text-center">
-                                <h6 style="padding-top: 10px;"><img src="../assets/images/icons/instagram_icon.svg"></h6>
-                                <i class="fas fa-map-marker-alt"></i> <span>Jakarta, ID</span>
-                                <p>lorem lorem</p>
                             </div>
                             
                             
@@ -270,6 +274,12 @@
         $(".multi-search-box").select2({
             placeholder: "start typing your search",
         });
+    </script>
+
+    <script>
+    $('#love_btn a').click(function(){
+        $(this).find('i').toggleClass('fa-heart fa-heart-o')
+    });
     </script>
 </body>
 

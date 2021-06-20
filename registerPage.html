@@ -10,8 +10,31 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/auth_page.css" />
+    <style>
+        @font-face {
+            font-family: TerminalDosis;
+            src: url(./assets/fonts/terminal-dosis/TerminalDosis-Regular.ttf)
+        }
+
+        @font-face {
+            font-family: TerminalDosisSemiBold;
+            src: url(./assets/fonts/terminal-dosis/TerminalDosis-SemiBold.ttf)
+        }
+
+        body {
+            font-family: TerminalDosis
+        }
+
+        .terminal-ds-semibold {
+            font-family: TerminalDosisSemiBold;
+        }
+
+        .roboto-font-reg {
+            font-family: 'Roboto';
+        }
+    </style>
 
 
 </head>
@@ -21,17 +44,15 @@
         <div class="row">
             <div class="bg-login col">
                 <div class="login-main-text text-center">
-                    <h1 style="font-size: 80px">kliklan</h1>
-                    <p>klik untuk beriklan</p>
+                    <h1 style="margin-top: 30px; font-size: 80px" class="terminal-ds-semibold">kliklan</h1>
+                    <p class="terminal-ds-semibold">klik untuk beriklan</p>
                 </div>
                 <div>
                     <img src="assets/images/orang_loginpage.svg" alt="login image" class="login-img" />
                 </div>
                 <div class="text-center">
-                    <p class="login-main-text">© 2020/2021 - Kelompok 8 IF 08</p>
+                    <p class="login-main-text terminal-ds-semibold">© 2020/2021 - Kelompok 8 IF 08</p>
                 </div>
-                <br>
-                <br>
             </div>
 
             <div class="col login-section-wrapper">
@@ -61,8 +82,9 @@
                 </div>
 
                 <div class="brand-wrapper">
-                    <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline-dark" type="submit">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" width="20" height="20" />
+                    <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline-dark roboto-font-reg" type="submit">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
+                            width="20" height="20" />
                         Register with Google
                     </button>
                 </div>
