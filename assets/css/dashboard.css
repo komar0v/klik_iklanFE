@@ -554,7 +554,16 @@
     color: #3498db;
 }
 
-/*****************END COMPONENTS*******************/
+/*****************end PAYMENT COMPONENTS*******************/
+
+.star-rating i {
+	color: #FFC107;
+	font-size: 24px;
+}
+
+.btn-paket-talent{
+    background-color: #0BA3DD;
+}
 
 @media screen and (max-width: 500px) {
     .show_on_mobile_only {
