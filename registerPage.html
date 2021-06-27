@@ -40,59 +40,54 @@
 </head>
 
 <body>
+    
     <div class="container-fluid">
         <div class="row">
-            <div class="bg-login col">
-                <div class="login-main-text text-center">
-                    <h1 style="margin-top: 30px; font-size: 80px" class="terminal-ds-semibold">kliklan</h1>
-                    <p class="terminal-ds-semibold">klik untuk beriklan</p>
-                </div>
-                <div>
-                    <img src="assets/images/orang_loginpage.svg" alt="login image" class="login-img" />
-                </div>
-                <div class="text-center">
-                    <p class="login-main-text terminal-ds-semibold">© 2020/2021 - Kelompok 8 IF 08</p>
-                </div>
-            </div>
-
-            <div class="col login-section-wrapper">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col">
-                        <div class="radio-pillbox">
-                            <radiogroup>
-                                <div>
-                                    <input type="radio" name="radio-group" id="login_page" value="login_page"
-                                        class="first">
-                                    <label for="login_page" class="radio-label">Login</label>
-                                    </input>
-                                </div>
-                                <div>
-                                    <input checked type="radio" name="radio-group" id="register_page"
-                                        value="register_page">
-                                    <label style="color: white;" for="register_page">Register</label>
-                                    </input>
-                                </div>
-
-                            </radiogroup>
-                        </div>
-
+          <div class="bg-login col text-center terminal-ds-semibold">
+            <h1 style="font-size: 80px" class="text-white pt-4">kliklan</h1>
+            <p class="text-white">klik untuk beriklan</p>
+            <img src="assets/images/orang_loginpage.svg" alt="login image" class="img-fluid pt-lg-3 pb-5" height="400"
+              width="400" />
+            <p class="text-white terminal-ds-semibold pt-4">© 2020/2021 - Kelompok 8 IF 08</p>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-6 pt-4">
+                <div class="radio-pillbox">
+                  <radiogroup>
+                    <div>
+                      <input type="radio" name="radio-group" id="login_page" value="login_page" class="first">
+                      <label for="login_page" class="radio-label">Login</label>
+                      </input>
                     </div>
-
+                    <div>
+                      <input checked type="radio" name="radio-group" id="register_page" value="register_page">
+                      <label style="color: white;" for="register_page">Register</label>
+                      </input>
+                    </div>
+    
+                  </radiogroup>
                 </div>
-
-                <div class="brand-wrapper">
-                    <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline-dark roboto-font-reg" type="submit">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
-                            width="20" height="20" />
-                        Register with Google
-                    </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="brand-wrapper pt-5">
+                  <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline-dark roboto-font-reg"
+                    type="submit">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
+                      width="20" height="20" />
+                    Register with Google
+                  </button>
                 </div>
                 <div class="row px-3 mb-4">
-                    <div class="line"></div>
-                    <p class="or text-center">atau</p>
-                    <div class="line"></div>
+                  <div class="line"></div>
+                  <p class="or text-center">atau</p>
+                  <div class="line"></div>
                 </div>
+    
                 <div class="login-wrapper">
                     <form action="#!">
                         <div class="form-group">
@@ -111,11 +106,13 @@
                         </div>
                         <input name="login" id="login" class="btn btn-block login-btn" type="button" value="Register" />
                     </form>
-
+                  
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

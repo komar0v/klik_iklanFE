@@ -115,300 +115,502 @@
                 </div>
             </nav>
 
-            <div class="row">
-                <div class="col-8">
-                    <div class="row">
-                        <div class="col-4 text-center">
-                            <div class="align-top float-left pt-3">
-                                <img onclick="backtohome()" style="margin-top: -80px;" class="img-fluid" height="30" width="30" src="../assets/images/icons/back_icon.svg">
-                            </div>
-                            <img src="../assets/images/talents/yayuk_roundBIG.png" class="img-fluid" height="200" width="200">
-                            
-                            <div style="margin-left: 20px;">
-                                <img class="img-fluid pt-3" src="../assets/images/icons/instagram_iconBIG.svg" width="40" height="40">
-                            <hr class="w-25">
-                            <i style="color: #FF2176;" class="fa fa-heart fa-3x"></i>
-                            <p class="text-body">Favorite : 2401</p>
-                            </div>
-                            
-                        </div>
-                        <div class="col-8">
-                            <h2>Yayuk Widiyanti</h2>
-                            <span class="text-body lead"><i class="fa fa-map-marker"></i> Jakarta, ID</span>
-                            <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <h5 class="text-body">Rules for Endorse :</h5>
-                            <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <h5 class="text-body">Price :</h5>
-
-                            <div class="row pb-2">
-                                <div class="col">
-                                    <span class="h6 text-body">Insta Story</span>
-                                </div>
-                                <div class="col">
-                                    <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 300.000</span>
-                                </div>
-                            </div>
-
-                            <div class="row pb-2">
-                                <div class="col">
-                                    <span class="h6 text-body">Insta Story + Keep 7 Days</span>
-                                </div>
-                                <div class="col">
-                                    <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 500.000</span>
-                                </div>
-                            </div>
-
-                            <div class="row pb-2">
-                                <div class="col">
-                                    <span class="h6 text-body">Post Feed</span>
-                                </div>
-                                <div class="col">
-                                    <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 800.000</span>
-                                </div>
-                            </div>
-
-                            <div class="row pb-2">
-                                <div class="col">
-                                    <span class="h6 text-body">Post Feed + Insta Story</span>
-                                </div>
-                                <div class="col">
-                                    <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 1.200.000</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col text-center">
-                            <button style="background-color: #0BA3DD;" class="btn text-white">Send Message</button>
-                            
-                        </div>
-                        <div class="col">
-                            <button data-toggle="modal" data-target="#modalEndorse" style="background-color: #76CC12;" class="btn text-white">Endorse</button>
-                        
-                            <!-- Modal Endorse-->
-                            <div class="modal fade" id="modalEndorse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header border-0">
-                                      
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
-                                      </button>
-                                    </div>
-                                        
-                                        <div style="margin-top: -50px;" class="text-center mx-auto" id="exampleModalLabel">
-                                            <img class="img-fluid" src="../assets/images/talents/yayuk_round.png" alt="">
-                                        </div>
-
-                                        <div class="text-center">
-                                            <h4>Yayuk Widiyanti</h4>
-                                            <span style="background-color: #0BA3DD;" class="text-white terminal-ds-semibold btn rounded-pill">Mohon sampaikan kebutuhannya di bawah ini ya</span>
-                                        </div>
-
-                                        <div class="pl-4 pr-4">
-                                            <div class="form-group">
-                                                <h5>1. Apa yang ingin dipromosikan?</h5>
-                                                <label for="pertanyaan1">Sebutkan nama produk / layanan / brand / campaign / event. Maksimal 60 karakter. Contoh: Minuman Kecatikan DivaBeau</label>
-                                                <input style="background-color: #F2F1F1;" type="email" class="form-control border-0" id="pertanyaan1">
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <h5>2. Jelaskan lebih detail mengenai produk</h5>
-                                                <label for="pertanyaan2">Jelaskan juga mengenai kegunaan / manfaat / keunggulan / keunikan / dll. Contoh: DivaBeau, minuman kecantikan pertama di Indonesia.</label>
-                                                <input style="background-color: #F2F1F1;" type="email" class="form-control border-0" id="pertanyaan2">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <h5>3. Upload foto produk</h5>
-                                                <p>Foto produk / poster campaign, Max 2 foto yang akan diiklankan.</p>
-                                                <button style="background-color: #F2F1F1;" class="float-left border-0 rounded-pill">Choose File</button>
-                                            </div>
-                                            <br><br>
-
-                                            <div class="form-group">
-                                                <h5>4. Paket endorse</h5>
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn">
-                                                      <input type="radio" name="options" id="option1" autocomplete="off"> Insta Story
-                                                    </label>
-                                                    
-                                                </div>
-
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn">
-                                                      <input type="radio" name="options" id="option2" autocomplete="off"> Insta Story + Keep 7 Days
-                                                    </label>
-                                                </div>
-
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn">
-                                                      <input type="radio" name="options" id="option3" autocomplete="off"> Post Feed
-                                                    </label>
-                                                </div>
-
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn">
-                                                      <input type="radio" name="options" id="option4" autocomplete="off"> Post Feed + Insta Story
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    <div class="modal-footer">
-                                      <button type="button" style="background-color: #76CC12;" class="btn text-white mx-auto">Send</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    
-
-                    <div>
+            <div class="hide_on_mobile">
+                <div class="row">
+                    <div class="col-8">
                         <div class="row">
-                        
-                            <span class="h3 align-middle"><img class="img-fluid" src="../assets/images/icons/like_icon.svg" height="60" width="60"> Reviews</span>
-                        </div>
-                        <hr style="position: relative; border: none; height: 1px; background: #C0C0C0;">
-                        <div class="row">
-                            <div class="col-2">
-                                <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
+                            <div class="col-4 text-center">
+                                <div class="align-top float-left pt-3">
+                                    <img onclick="backtohome()" style="margin-top: -80px;" class="img-fluid" height="30" width="30" src="../assets/images/icons/back_icon.svg">
+                                </div>
+                                <img src="../assets/images/talents/yayuk_roundBIG.png" class="img-fluid" height="200" width="200">
+                                
+                                <div style="margin-left: 20px;">
+                                    <img class="img-fluid pt-3" src="../assets/images/icons/instagram_iconBIG.svg" width="40" height="40">
+                                <hr class="w-25">
+                                <i style="color: #FF2176;" class="fa fa-heart fa-3x"></i>
+                                <p class="text-body">Favorite : 2401</p>
+                                </div>
+                                
                             </div>
-                            
-                            <div class="col">
-                                <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
-                            </div>
-                        </div>
+                            <div class="col-8">
+                                <h2>Yayuk Widiyanti</h2>
+                                <span class="text-body lead"><i class="fa fa-map-marker"></i> Jakarta, ID</span>
+                                <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h5 class="text-body">Rules for Endorse :</h5>
+                                <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h5 class="text-body">Price :</h5>
     
-                        <div class="row">
-                            <div class="col-2">
-                                <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
-                            </div>
-                            
-                            <div class="col">
-                                <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
-                            </div>
-                        </div>
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Insta Story</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 300.000</span>
+                                    </div>
+                                </div>
     
-                        <div class="row">
-                            <div class="col-2">
-                                <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
-                            </div>
-                            
-                            <div class="col">
-                                <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Insta Story + Keep 7 Days</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 500.000</span>
+                                    </div>
+                                </div>
+    
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Post Feed</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 800.000</span>
+                                    </div>
+                                </div>
+    
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Post Feed + Insta Story</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 1.200.000</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col text-center">
-                                <button style="background-color: #0BA3DD;" class="btn text-white">load more</button>
+                                <button onclick="location.href='./messagePage.html';" style="background-color: #0BA3DD;" class="btn text-white">Send Message</button>
+                                
                             </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div style="box-shadow: 0 4px 2px -2px gray;" class="col-4">
-                    <img src="../assets/images/icons/insight_icon.svg" width="40" height="40">
-                    <span class="h5">Insight</span>
-                    <hr style="position: relative; border: none; height: 2px; background: #C0C0C0;">
-                    <div class="row text-center">
-                        <div class="col-4">
-                            <h4 style="margin-bottom: -10px; padding-bottom: -10px;">400</h4>
-                            <p>Post</p>
-                        </div>
-                        <div class="col-4">
-                            <h4 style="margin-bottom: -10px; padding-bottom: -10px;">4.5M</h4>
-                            <p>Followers</p>
-                        </div>
-                        <div class="col-4">
-                            <h4 style="margin-bottom: -10px; padding-bottom: -10px;">776</h4>
-                            <p>Following</p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-4">
+                            <div class="col">
+                                <button data-toggle="modal" data-target="#modalEndorse" style="background-color: #76CC12;" class="btn text-white">Endorse</button>
                             
+                                <!-- Modal Endorse-->
+                                <div class="modal fade" id="modalEndorse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                          
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                                          </button>
+                                        </div>
+                                            
+                                            <div style="margin-top: -50px;" class="text-center mx-auto" id="exampleModalLabel">
+                                                <img class="img-fluid" src="../assets/images/talents/yayuk_round.png" alt="">
+                                            </div>
+    
+                                            <div class="text-center">
+                                                <h4>Yayuk Widiyanti</h4>
+                                                <span style="background-color: #0BA3DD;" class="text-white terminal-ds-semibold btn rounded-pill">Mohon sampaikan kebutuhannya di bawah ini ya</span>
+                                            </div>
+    
+                                            <div class="pl-4 pr-4">
+                                                <div class="form-group">
+                                                    <h5>1. Apa yang ingin dipromosikan?</h5>
+                                                    <label for="pertanyaan1">Sebutkan nama produk / layanan / brand / campaign / event. Maksimal 60 karakter. Contoh: Minuman Kecatikan DivaBeau</label>
+                                                    <input style="background-color: #F2F1F1;" type="email" class="form-control border-0" id="pertanyaan1">
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <h5>2. Jelaskan lebih detail mengenai produk</h5>
+                                                    <label for="pertanyaan2">Jelaskan juga mengenai kegunaan / manfaat / keunggulan / keunikan / dll. Contoh: DivaBeau, minuman kecantikan pertama di Indonesia.</label>
+                                                    <input style="background-color: #F2F1F1;" type="email" class="form-control border-0" id="pertanyaan2">
+                                                </div>
+    
+                                                <div class="form-group">
+                                                    <h5>3. Upload foto produk</h5>
+                                                    <p>Foto produk / poster campaign, Max 2 foto yang akan diiklankan.</p>
+                                                    <button style="background-color: #F2F1F1;" class="float-left border-0 rounded-pill">Choose File</button>
+                                                </div>
+                                                <br><br>
+    
+                                                <div class="form-group">
+                                                    <h5>4. Paket endorse</h5>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option1" autocomplete="off"> Insta Story
+                                                        </label>
+                                                        
+                                                    </div>
+    
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Insta Story + Keep 7 Days
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option3" autocomplete="off"> Post Feed
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option4" autocomplete="off"> Post Feed + Insta Story
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        <div class="modal-footer">
+                                          <button onclick="location.href='./transactionPage.html';" type="button" style="background-color: #76CC12;" class="btn text-white mx-auto">Send</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <h4 style="margin-bottom: -10px; padding-bottom: -10px;">22M</h4>
-                            <p>Impression</p>
-                        </div>
-                        <div class="col-4">
+                        
+    
+                        <div>
+                            <div class="row">
                             
+                                <span class="h3 align-middle"><img class="img-fluid" src="../assets/images/icons/like_icon.svg" height="60" width="60"> Reviews</span>
+                            </div>
+                            <hr style="position: relative; border: none; height: 1px; background: #C0C0C0;">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
+                                </div>
+                                
+                                <div class="col">
+                                    <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
+                                </div>
+                                
+                                <div class="col">
+                                    <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
+                                </div>
+                                
+                                <div class="col">
+                                    <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button style="background-color: #0BA3DD;" class="btn text-white">load more</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div style="box-shadow: 0 4px 2px -2px gray;" class="col-4">
+                        <img src="../assets/images/icons/insight_icon.svg" width="40" height="40">
+                        <span class="h5">Insight</span>
+                        <hr style="position: relative; border: none; height: 2px; background: #C0C0C0;">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <h4 style="margin-bottom: -10px; padding-bottom: -10px;">400</h4>
+                                <p>Post</p>
+                            </div>
+                            <div class="col-4">
+                                <h4 style="margin-bottom: -10px; padding-bottom: -10px;">4.5M</h4>
+                                <p>Followers</p>
+                            </div>
+                            <div class="col-4">
+                                <h4 style="margin-bottom: -10px; padding-bottom: -10px;">776</h4>
+                                <p>Following</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-4">
+                                
+                            </div>
+                            <div class="col-4">
+                                <h4 style="margin-bottom: -10px; padding-bottom: -10px;">22M</h4>
+                                <p>Impression</p>
+                            </div>
+                            <div class="col-4">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row text-center">
+                            <div class="col">
+                                <h4 style="margin-bottom: -10px; padding-bottom: -10px;">522.000</h4>
+                                <p>Likes/post</p>
+                            </div>
+                            <div class="col">
+                                <h4 style="margin-bottom: -10px; padding-bottom: -10px;">191.000</h4>
+                                <p>Comments/post</p>
+                            </div>
+                        </div>
+                        <hr style="position: relative; border: none; height: 2px; background: black;">
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <a href="https://www.instagram.com/p/B3EmuNvnqvZ/"><img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" ></a>
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" >
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" >
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" >
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
+                                    <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row text-center">
-                        <div class="col">
-                            <h4 style="margin-bottom: -10px; padding-bottom: -10px;">522.000</h4>
-                            <p>Likes/post</p>
-                        </div>
-                        <div class="col">
-                            <h4 style="margin-bottom: -10px; padding-bottom: -10px;">191.000</h4>
-                            <p>Comments/post</p>
-                        </div>
-                    </div>
-                    <hr style="position: relative; border: none; height: 2px; background: black;">
-                    
-                    <div class="row">
-                        <div class="col">
-                            <div class="text-center">
-                                <a href="https://www.instagram.com/p/B3EmuNvnqvZ/"><img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" ></a>
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="text-center">
-                                <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="text-center">
-                                <img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" >
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="text-center">
-                                <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="text-center">
-                                <img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" >
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="text-center">
-                                <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="text-center">
-                                <img class="img-fluid" src="../assets/images/yayuk_gmbar1.png" >
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1800</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="text-center">
-                                <img class="img-fluid" src="../assets/images/yayuk_gmbar2.png">
-                                <p style="color: black;"><i class="fa fa-heart"></i> 1120</p>
-                            </div>
-                        </div>
-                    </div>
+    
                 </div>
-
             </div>
+
+            <div class="show_on_mobile_only">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <div class="align-top float-left pt-3">
+                                    <img onclick="backtohome()" style="margin-top: -80px;" class="img-fluid" height="30" width="30" src="../assets/images/icons/back_icon.svg">
+                                </div>
+                                <img src="../assets/images/talents/yayuk_roundBIG.png" class="img-fluid" height="200" width="200">
+                                
+                                <div style="margin-left: 20px;">
+                                    <img class="img-fluid pt-3" src="../assets/images/icons/instagram_iconBIG.svg" width="40" height="40">
+                                <hr class="w-25">
+                                <i style="color: #FF2176;" class="fa fa-heart fa-3x"></i>
+                                <p class="text-body">Favorite <br> 2401</p>
+                                </div>
+                                
+                            </div>
+                            <div class="col-8">
+                                <h2>Yayuk Widiyanti</h2>
+                                <span class="text-body lead"><i class="fa fa-map-marker"></i> Jakarta, ID</span>
+                                <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h5 class="text-body">Rules for Endorse :</h5>
+                                <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h5 class="text-body">Price :</h5>
+    
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Insta Story</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 300.000</span>
+                                    </div>
+                                </div>
+    
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Insta Story + Keep 7 Days</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 500.000</span>
+                                    </div>
+                                </div>
+    
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Post Feed</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 800.000</span>
+                                    </div>
+                                </div>
+    
+                                <div class="row pb-2">
+                                    <div class="col">
+                                        <span class="h6 text-body">Post Feed + Insta Story</span>
+                                    </div>
+                                    <div class="col">
+                                        <span style="background-color: #0BA3DD;" class="btn btn-sm text-white">Rp. 1.200.000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button onclick="location.href='./messagePage.html';" style="background-color: #0BA3DD;" class="btn text-white">Send Message</button>
+                                
+                            </div>
+                            <div class="col">
+                                <button data-toggle="modal" data-target="#modalEndorseMobile" style="background-color: #76CC12;" class="btn text-white">Endorse</button>
+                            
+                                <!-- Modal Endorse-->
+                                <div class="modal fade" id="modalEndorseMobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                          
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                                          </button>
+                                        </div>
+                                            
+                                            <div style="margin-top: -50px;" class="text-center mx-auto" id="exampleModalLabel">
+                                                <img class="img-fluid" src="../assets/images/talents/yayuk_round.png" alt="">
+                                            </div>
+    
+                                            <div class="text-center">
+                                                <h4>Yayuk Widiyanti</h4>
+                                                <span style="background-color: #0BA3DD;" class="text-white terminal-ds-semibold btn rounded-pill">Mohon sampaikan kebutuhannya di bawah ini ya</span>
+                                            </div>
+    
+                                            <div class="pl-4 pr-4">
+                                                <div class="form-group">
+                                                    <h5>1. Apa yang ingin dipromosikan?</h5>
+                                                    <label for="pertanyaan1">Sebutkan nama produk / layanan / brand / campaign / event. Maksimal 60 karakter. Contoh: Minuman Kecatikan DivaBeau</label>
+                                                    <input style="background-color: #F2F1F1;" type="email" class="form-control border-0" id="pertanyaan1">
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <h5>2. Jelaskan lebih detail mengenai produk</h5>
+                                                    <label for="pertanyaan2">Jelaskan juga mengenai kegunaan / manfaat / keunggulan / keunikan / dll. Contoh: DivaBeau, minuman kecantikan pertama di Indonesia.</label>
+                                                    <input style="background-color: #F2F1F1;" type="email" class="form-control border-0" id="pertanyaan2">
+                                                </div>
+    
+                                                <div class="form-group">
+                                                    <h5>3. Upload foto produk</h5>
+                                                    <p>Foto produk / poster campaign, Max 2 foto yang akan diiklankan.</p>
+                                                    <button style="background-color: #F2F1F1;" class="float-left border-0 rounded-pill">Choose File</button>
+                                                </div>
+                                                <br><br>
+    
+                                                <div class="form-group">
+                                                    <h5>4. Paket endorse</h5>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option1" autocomplete="off"> Insta Story
+                                                        </label>
+                                                        
+                                                    </div>
+    
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Insta Story + Keep 7 Days
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option3" autocomplete="off"> Post Feed
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn">
+                                                          <input type="radio" name="options" id="option4" autocomplete="off"> Post Feed + Insta Story
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        <div class="modal-footer">
+                                          <button type="button" onclick="location.href='./transactionPage.html';" style="background-color: #76CC12;" class="btn text-white mx-auto">Send</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        
+    
+                        <div>
+                            <div class="row">
+                            
+                                <span class="h3 align-middle"><img class="img-fluid" src="../assets/images/icons/like_icon.svg" height="60" width="60"> Reviews</span>
+                            </div>
+                            <hr style="position: relative; border: none; height: 1px; background: #C0C0C0;">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
+                                </div>
+                                
+                                <div class="col">
+                                    <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
+                                </div>
+                                
+                                <div class="col">
+                                    <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid" src="../assets/images/icons/bos_karywn_icon.svg">
+                                </div>
+                                
+                                <div class="col">
+                                    <p class="lead">KLIEN Sangat menyenangkan sekali bekerja sama dengan kak Yayuk. Respon baik, pengerjaan cepat, detile. Foto tampak menarik dan memuaskan. Engagement comment juga rame. Pokoknya recommended banget deh endorse ke kak Yayuk</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button style="background-color: #0BA3DD;" class="btn text-white">load more</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                </div>
+            </div>
+
+            
 
         </div>
 

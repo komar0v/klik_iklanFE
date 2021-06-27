@@ -117,16 +117,6 @@
   margin-bottom: 25px;
 }
 
-.login-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 15px;
-  padding-bottom: 40px;
-  width: 75%;
-  height: 75%;
-}
-
 .img-waves {
   z-index: 1;
   position: relative;
@@ -147,12 +137,8 @@
   border-radius: 5rem;
 }
 
-.login-main-text {
-  color: #fff;
-}
-
 .line {
-  height: 1px;
+  height: 3px;
   width: 45%;
   background-color: #E0E0E0;
   margin-top: 10px

@@ -120,104 +120,201 @@
                 <div class="col-12">
                     <h3>Transaction History</h3>
 
+                    <div class="hide_on_mobile">
 
-                    <div class="container col-8 hide_on_mobile">
-                        <div class="row bg-white">
-                            <div class="col-4 text-center">
-                                <img class="img-fluid" height="140" width="140"
-                                    src="../assets/images/talents/yayuk_roundBIG.png">
-                            </div>
-                            <div class="col-8">
-                                <div class="pb-4">
-                                    <span class="float-left h5">Yayuk Widiyanti</span>
-                                    <span style="color: #0998CF;" class="float-right lead">Sedang diproses</span>
+                        <div class="container col-8">
+                            <div class="row bg-white">
+                                <div class="col-4 text-center">
+                                    <img class="img-fluid" height="140" width="140"
+                                        src="../assets/images/talents/yayuk_roundBIG.png">
                                 </div>
-                                <hr style="border-top: 2px solid #C0C0C0;">
-                                <div>
-                                    <span class="float-left h5">Instastory</span>
-                                    <span class="float-right lead h5">Rp 300.000</span>
-                                </div>
-                                <div class="pt-5">
-                                    <span>
-                                        <button style="border-radius: 15px; background-color: #0BA3DD;"
-                                            class="btn text-white float-right">Send Message</button>
-                                    </span>
+                                <div class="col-8">
+                                    <div class="pb-4">
+                                        <span class="float-left h5">Yayuk Widiyanti</span>
+                                        <span style="color: #0998CF;" class="float-right lead">Sedang diproses</span>
+                                    </div>
+                                    <hr style="border-top: 2px solid #C0C0C0;">
+                                    <div>
+                                        <span class="float-left h5">Instastory</span>
+                                        <span class="float-right lead h5">Rp 300.000</span>
+                                    </div>
+                                    <div class="pt-5">
+                                        <span>
+                                            <button onclick="location.href='./messagePage.html';" style="border-radius: 15px; background-color: #0BA3DD;"
+                                                class="btn text-white float-right">Send Message</button>
+                                        </span>
+
+                                    </div>
 
                                 </div>
-
                             </div>
                         </div>
-                    </div>
 
-                    <div class="container pt-4 col-8 hide_on_mobile">
-                        <div class="row bg-white">
-                            <div class="col-4 text-center">
-                                <img class="img-fluid" height="120" width="120"
-                                    src="../assets/images/talents/isyana_roundBIG.png">
-                            </div>
-                            <div class="col-8">
-                                <div class="pb-4">
-                                    <span class="float-left h5">Isyana Sarasvati</span>
-                                    <span style="color: #76CC12;" class="float-right lead">Selesai</span>
+                        <div class="container pt-4 col-8">
+                            <div class="row bg-white">
+                                <div class="col-4 text-center">
+                                    <img class="img-fluid" height="120" width="120"
+                                        src="../assets/images/talents/isyana_roundBIG.png">
                                 </div>
-                                <hr style="border-top: 2px solid #C0C0C0;">
-                                <div>
-                                    <span class="float-left h5">Post Feed</span>
-                                    <span class="float-right lead h5">Rp 800.000</span>
-                                </div>
-                                <div class="pt-5 text-right">
-                                    <button type="button" data-toggle="modal" data-target="#modalReview"
-                                        style="border-radius: 15px; border-color: black;" class="btn">Write a
-                                        review</button>
-                                    <button style="border-radius: 15px; background-color: #0BA3DD;"
-                                        class="btn text-white">Send Message</button>
+                                <div class="col-8">
+                                    <div class="pb-4">
+                                        <span class="float-left h5">Isyana Sarasvati</span>
+                                        <span style="color: #76CC12;" class="float-right lead">Selesai</span>
+                                    </div>
+                                    <hr style="border-top: 2px solid #C0C0C0;">
+                                    <div>
+                                        <span class="float-left h5">Post Feed</span>
+                                        <span class="float-right lead h5">Rp 800.000</span>
+                                    </div>
+                                    <div class="pt-5 text-right">
+                                        <button type="button" data-toggle="modal" data-target="#modalReview"
+                                            style="border-radius: 15px; border-color: black;" class="btn">Write a
+                                            review</button>
+                                        <button style="border-radius: 15px; background-color: #0BA3DD;"
+                                            class="btn text-white">Send Message</button>
 
-                                </div>
+                                    </div>
 
 
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="modalReview" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <img class="img-fluid" src="../assets/images/modal_review_peoples.svg">
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="form-group">
-                                                    <label for="inputReview">
-                                                        <h5>Write a Review</h5>
-                                                    </label>
-                                                    <textarea type="email" class="form-control" id="inputReview"
-                                                        style="background-color: #F2F1F1;"></textarea>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modalReview" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <img class="img-fluid"
+                                                        src="../assets/images/modal_review_peoples.svg">
                                                 </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label for="inputReview">
+                                                            <h5>Write a Review</h5>
+                                                        </label>
+                                                        <textarea type="email" class="form-control" id="inputReview"
+                                                            style="background-color: #F2F1F1;"></textarea>
+                                                    </div>
 
-                                                <div class="form-group">
-                                                    <label for="inputReview">
-                                                        <h5>Review Score</h5>
-                                                    </label>
-                                                    <div class="star-rating">
-                                                        <i class="fas fa-star" id="star1" onclick="add(this,1)"></i>
-                                                        <i class="fas fa-star" id="star2" onclick="add(this,2)"></i>
-                                                        <i class="fas fa-star" id="star3" onclick="add(this,3)"></i>
-                                                        <i class="far fa-star" id="star4" onclick="add(this,4)"></i>
-                                                        <i class="far fa-star" id="star5" onclick="add(this,5)"></i>
+                                                    <div class="form-group">
+                                                        <label for="inputReview">
+                                                            <h5>Review Score</h5>
+                                                        </label>
+                                                        <div class="star-rating">
+                                                            <i class="fas fa-star" id="star1" onclick="add(this,1)"></i>
+                                                            <i class="fas fa-star" id="star2" onclick="add(this,2)"></i>
+                                                            <i class="fas fa-star" id="star3" onclick="add(this,3)"></i>
+                                                            <i class="far fa-star" id="star4" onclick="add(this,4)"></i>
+                                                            <i class="far fa-star" id="star5" onclick="add(this,5)"></i>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button style="background-color: #76CC12;" type="button"
-                                                    class="btn mx-auto text-white" data-dismiss="modal">Send</button>
+                                                <div class="modal-footer">
+                                                    <button style="background-color: #76CC12;" type="button"
+                                                        class="btn mx-auto text-white"
+                                                        data-dismiss="modal">Send</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
+
+                    <div class="show_on_mobile_only">
+                        <div class="container">
+                            <div class="row bg-white">
+                                <div class="col-4 text-center">
+                                    <img class="img-fluid" height="140" width="140"
+                                        src="../assets/images/talents/yayuk_roundBIG.png">
+                                </div>
+                                <div class="col-8">
+                                    <div class="pb-4">
+                                        <span class="float-left h5">Yayuk Widiyanti</span>
+                                        <span style="color: #0998CF;" class="float-right lead">Sedang diproses</span>
+                                    </div>
+                                    <div>
+                                        <span class="float-left h5">Instastory</span>
+                                        <span class="float-right lead h5">Rp 300.000</span>
+                                    </div>
+                                    <div class="pt-5">
+                                        <span>
+                                            <button onclick="location.href='./messagePage.html';" style="border-radius: 15px; background-color: #0BA3DD;"
+                                                class="btn text-white float-right">Send Message</button>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row bg-white">
+                                <div class="col-4 text-center">
+                                    <img class="img-fluid" height="120" width="120"
+                                        src="../assets/images/talents/isyana_roundBIG.png">
+                                </div>
+                                <div class="col-8">
+                                    <div class="pb-4">
+                                        <span class="float-left h5">Isyana Sarasvati</span>
+                                        <span style="color: #76CC12;" class="float-right lead">Selesai</span>
+                                    </div>
+                                    <div>
+                                        <span class="float-left h5">Post Feed</span>
+                                        <span class="float-right lead h5">Rp 800.000</span>
+                                    </div>
+                                    <div class="pt-5 text-right">
+                                        <button type="button" data-toggle="modal" data-target="#modalReviewMobile"
+                                            style="border-radius: 15px; border-color: black;" class="btn">Write a
+                                            review</button>
+                                        <button style="border-radius: 15px; background-color: #0BA3DD;"
+                                            class="btn text-white">Send Message</button>
+
+                                    </div>
+
+
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modalReviewMobile" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <img class="img-fluid"
+                                                        src="../assets/images/modal_review_peoples.svg">
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label for="inputReview">
+                                                            <h5>Write a Review</h5>
+                                                        </label>
+                                                        <textarea type="email" class="form-control" id="inputReview"
+                                                            style="background-color: #F2F1F1;"></textarea>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="inputReview">
+                                                            <h5>Review Score</h5>
+                                                        </label>
+                                                        <div id="reviewMobile"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button style="background-color: #76CC12;" type="button"
+                                                        class="btn mx-auto text-white"
+                                                        data-dismiss="modal">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
             </div>
@@ -229,6 +326,16 @@
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/rating.js"></script>
+    <script>
+        $("#reviewMobile").rating({
+        "value": 2,
+        "click": function (e) {
+            console.log(e);
+            $("#starsInput").val(e.stars);
+            }
+        });
+    </script>
     <script>
         function add(ths, sno) {
             for (var i = 1; i <= 5; i++) {
