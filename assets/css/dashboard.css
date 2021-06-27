@@ -557,23 +557,23 @@
 /*****************end PAYMENT COMPONENTS*******************/
 
 .star-rating i {
-	color: #FFC107;
-	font-size: 24px;
+    color: #FFC107;
+    font-size: 24px;
 }
 
-.btn-paket-talent{
+.btn-paket-talent {
     background-color: #0BA3DD;
 }
 
 /*****************MESSAGE MOBILE*******************/
 
-.person_icon_chat{
+.person_icon_chat {
     border-style: solid;
     border-color: #999B9D;
     border-width: 4px 0px 0px 0px;
 }
 
-.person_icon_chat-active{
+.person_icon_chat-active {
     border-style: solid;
     border-color: green;
     border-width: 0px 0px 0px 4px;
@@ -587,11 +587,13 @@
     margin-top: 60px;
     margin-bottom: 10px;
 }
+
 .chat li {
     padding: 0.5rem;
     overflow: hidden;
     display: flex;
 }
+
 .chat .avatar {
     width: 40px;
     height: 40px;
@@ -602,8 +604,9 @@
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
+
 .chat .avatar img {
     width: 40px;
     height: 40px;
@@ -611,12 +614,13 @@
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
+
 .chat .day {
     position: relative;
     display: block;
@@ -640,6 +644,7 @@
     border-top-left-radius: 0px;
     box-shadow: -1px 2px 0px #D4D4D4;
 }
+
 .other:before {
     content: "";
     position: relative;
@@ -657,14 +662,17 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
+
 .self .msg {
     order: 1;
     border-bottom-right-radius: 0px;
     box-shadow: 1px 2px 0px #D4D4D4;
 }
+
 .self .avatar {
     order: 2;
 }
+
 .self .avatar:after {
     content: "";
     position: relative;
@@ -685,7 +693,7 @@
     background-color: #40E83E;
     border-radius: 50%;
     display: inline-block;
-  }
+}
 
 .msg {
     background: white;
@@ -694,11 +702,13 @@
     border-radius: 2px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
 }
+
 .msg p {
     font-size: 0.8rem;
     margin: 0 0 0.2rem 0;
     color: #777;
 }
+
 .msg img {
     position: relative;
     display: block;
