@@ -40,7 +40,7 @@
     border-width: 1px 1px 4px 1px;
 }
 
-.menu-box::after {
+/* .menu-box::after {
     content: "";
     display: block;
     position: absolute;
@@ -62,7 +62,7 @@
     opacity: .2;
     transition: 0s;
     transform: scale(0, 0);
-}
+} */
 
 .menu-box:hover {
     background-color: #BAD8F4;

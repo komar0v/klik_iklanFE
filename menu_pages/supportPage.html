@@ -7,16 +7,70 @@
     <title>Support</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
     <style>
-        @font-face{
-            font-family: TerminalDosis; src: url(../assets/fonts/terminal-dosis/TerminalDosis-Regular.ttf)
+        @font-face {
+            font-family: TerminalDosis;
+            src: url(../assets/fonts/terminal-dosis/TerminalDosis-Regular.ttf)
         }
+
         body {
             font-family: TerminalDosis
+        }
+
+        .accordion .card {
+            border-radius: 0;
+            border: none;
+            margin-bottom: 5px;
+            padding-bottom: 3px;
+        }
+
+        .accordion .card-header {
+            background: #ececec;
+            padding: .4rem 1rem;
+            border-radius: 0;
+            margin-bottom: -2px;
+            font-family: "Roboto", sans-serif;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            margin: 0 3px 3px 0;
+            border: none;
+        }
+
+        .accordion .card-header:hover {
+            background: #e0e0e0;
+        }
+
+        .accordion .card-header .btn {
+            font-size: 1.04rem;
+            font-weight: 500;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            top: -2px;
+        }
+
+        .accordion .card-header i {
+            float: right;
+            font-size: 1.3rem;
+            font-weight: bold;
+            position: relative;
+            top: 5px;
+        }
+
+        .accordion .card-header button:hover {
+            color: #23384e;
+        }
+
+        .accordion .card-header.highlight {
+            color: #fff;
+            background: #47b9de;
+        }
+
+        .accordion .card-body {
+            text-align: justify;
         }
     </style>
 </head>
@@ -28,19 +82,24 @@
         <nav id="sidebar" class="active">
             <ul class="list-unstyled components mb-5 position-fixed">
                 <li class="hide_on_mobile">
-                    <a onclick="minimize_sidebar()" href="#"><span><img width="25" height="25" src="../assets/images/icons/bars_icon.svg"></span></a>
+                    <a onclick="minimize_sidebar()" href="#"><span><img width="25" height="25"
+                                src="../assets/images/icons/bars_icon.svg"></span></a>
                 </li>
                 <li>
-                    <a id="icn_text_home" href="./home_FindTalent.html"><span><img width="25" height="25" src="../assets/images/icons/home_icon.svg"></span>Home</a>
+                    <a id="icn_text_home" href="./home_FindTalent.html"><span><img width="25" height="25"
+                                src="../assets/images/icons/home_icon.svg"></span>Home</a>
                 </li>
                 <li>
-                    <a id="icn_text_message" href="./messagePage.html"><span><img width="25" height="25" src="../assets/images/icons/message_icon.svg"></span>Message</a>
+                    <a id="icn_text_message" href="./messagePage.html"><span><img width="25" height="25"
+                                src="../assets/images/icons/message_icon.svg"></span>Message</a>
                 </li>
                 <li>
-                    <a id="icn_text_trx" href="./transactionPage.html"><span><img width="25" height="25" src="../assets/images/icons/transaction_icon.svg"></span>Transaction</a>
+                    <a id="icn_text_trx" href="./transactionPage.html"><span><img width="25" height="25"
+                                src="../assets/images/icons/transaction_icon.svg"></span>Transaction</a>
                 </li>
                 <li class="halaman-aktif">
-                    <a id="icn_text_support" href="#"><span><img width="25" height="25" src="../assets/images/icons/support_icon.svg"></span>Support</a>
+                    <a id="icn_text_support" href="#"><span><img width="25" height="25"
+                                src="../assets/images/icons/support_icon.svg"></span>Support</a>
                 </li>
             </ul>
         </nav>
@@ -59,12 +118,14 @@
                     <div class="row hide_on_mobile">
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item active-page-tittle">
-                                <a href=""><h3 class="nav-link">Support</h3></a>
+                                <a href="">
+                                    <h3 class="nav-link">Support</h3>
+                                </a>
                             </li>
                         </ul>
-                        
+
                     </div>
-                    
+
                     <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +160,7 @@
             </nav>
 
             <div class="row">
-                
+
                 <div class="col-12">
                     <div style="background-color: #B3D3F2;" class="jumbotron bg-support-page">
                         <p style="color: black;" class="display-4 lead text-center">Hello, what can we do for you?</p>
@@ -110,7 +171,7 @@
                                 placeholder="start typing your search">
                             <div class="input-group-append">
                                 <button class="btn btn-light search-box" type="button">
-                                    <img width="25" height="25" src="../assets/images/icons/kaca_pembesar.svg">
+                                    <i class="fas fa-search"></i>
                                 </button>
                             </div>
 
@@ -122,22 +183,178 @@
             </div>
 
             <div class="row text-center">
-                
-                <div class="mr-3 ml-3 mt-3 mb-3 col-lg-3 mx-auto menu-box">
-                    <a href="#">
-                        <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_faq.svg">
-                    </a>
-                    <h3 class="name">FAQ</h3>
+
+                <div class="col">
+                    <div class="mx-auto menu-box">
+                        <a href="#">
+                            <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_faq.svg">
+                        </a>
+                        <h3 class="name">FAQ</h3>
+                        <div class="accordion mt-5" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="clearfix mb-0">
+                                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Item #1
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                        eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec
+                                        turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum
+                                        scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In
+                                        tincidunt orci sit amet elementum vestibulum.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Item #2
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                        accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                        wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                        assumenda shoreditch et.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Item #3
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                        eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec
+                                        turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum
+                                        scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In
+                                        tincidunt orci sit amet elementum vestibulum.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Item #4
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                        accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                        wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                        assumenda shoreditch et.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mr-3 ml-3 mt-3 mb-3 col-lg-3 mx-auto menu-box">
-                    <a href="#">
-                        <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_guide.svg">
-                    </a>
-                    <h3 class="name">GUIDE</h3>
-
+                <div class="col">
+                    <div class="mx-auto menu-box">
+                        <a href="#">
+                            <img class="img-fluid" width="80" height="80" src="../assets/images/icons/icon_guide.svg">
+                        </a>
+                        <h3 class="name">GUIDE</h3>
+                        <div class="accordion mt-5" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingSatu">
+                                    <h2 class="clearfix mb-0">
+                                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseSatu"
+                                            aria-expanded="true" aria-controls="collapseSatu">
+                                            Item #1
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseSatu" class="collapse" aria-labelledby="headingSatu"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                        eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec
+                                        turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum
+                                        scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In
+                                        tincidunt orci sit amet elementum vestibulum.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingDua">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseDua" aria-expanded="false"
+                                            aria-controls="collapseDua">
+                                            Item #2
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseDua" class="collapse" aria-labelledby="headingDua"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                        accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                        wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                        assumenda shoreditch et.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTiga">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTiga" aria-expanded="false"
+                                            aria-controls="collapseTiga">
+                                            Item #3
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseTiga" class="collapse" aria-labelledby="headingTiga"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                        eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec
+                                        turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum
+                                        scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In
+                                        tincidunt orci sit amet elementum vestibulum.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingEmpat">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseEmpat" aria-expanded="false"
+                                            aria-controls="collapseEmpat">
+                                            Item #4
+                                            <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseEmpat" class="collapse" aria-labelledby="headingEmpat"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                        accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                        wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                        assumenda shoreditch et.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
         </div>
@@ -147,6 +364,26 @@
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".collapse.show").each(function () {
+                $(this).siblings(".card-header").find(".btn i").html("remove");
+                $(this).prev(".card-header").addClass("highlight");
+            });
+
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).parent().find(".card-header .btn i").html("remove");
+            }).on('hide.bs.collapse', function () {
+                $(this).parent().find(".card-header .btn i").html("add");
+            });
+
+            $(".card-header .btn").click(function () {
+                $(".card-header").not($(this).parents()).removeClass("highlight");
+                $(this).parents(".card-header").toggleClass("highlight");
+            });
+        });
+    </script>
 </body>
 
 </html>
